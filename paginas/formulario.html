@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+    <link rel="stylesheet" href="./estiloform.css">
+</head>
+<body>
+    <section class="formgeral">
+        <form id="cadastroForm">
+            <fieldset>
+                <legend>Faça seu cadastro</legend>
+                
+                <article class="partform">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </article>
+                
+                <article class="partform">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </article>
+                
+                <article class="partform">
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" required>
+                </article>
+
+                <article class="partform">
+                    <label for="dataNascimento">Data de Nascimento:</label>
+                    <input type="date" id="dataNascimento" name="dataNascimento" required>
+                </article>
+                
+                <article class="partform">
+                    <label for="Enviar">Forma de Envio:</label>
+                    <select id="enviar" name="enviar" required>
+                        <option value="sedex">Sedex</option>
+                        <option value="PAC">PAC</option>
+                        <option value="retirada">Retirada</option>
+                    </select>
+                </article>
+                <article class="partform">
+                    <label for="pagamento">Forma de Pagamento:</label>
+                    <select id="pagamento" name="pagamento" required>
+                        <option value="cartao">Cartão de Crédito</option>
+                        <option value="boleto">Boleto Bancário</option>
+                        <option value="pix">PIX</option>
+                    </select>
+                </article> 
+                <article>
+                    <label for="check">Aceita os termos</label>
+                    <input type="checkbox" id="check" name="check">
+                </article>
+                
+                <section class="botao">
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Limpar</button>
+                </section>
+            </fieldset>
+        </form>
+    </section>
+    <section id="result"></section>
+    <script src="./index.js"></script>
+</body>
+</html>

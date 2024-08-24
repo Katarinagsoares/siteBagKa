@@ -1,0 +1,57 @@
+.formgeral {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgb(238, 214, 186);
+    border-radius: 8px;
+}
+fieldset {
+    border: 1px solid beige;
+    border-radius: 8px;
+    padding: 15px;
+}
+legend {
+    font-weight: bold;
+    padding: 15 px;
+    background-color: #fff;
+    color:black;
+}
+.partform{
+    margin-bottom: 15px;
+}
+.partform label {
+    font-weight: bold;
+}
+.partform input {
+    width: calc(100% - 16px);
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+.botao {
+    text-align: center;
+}
+.botao button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    width: 30%;
+}
+/* Media Queries */
+@media (min-width: 992px) {
+    .formgeral {
+        padding: 40px;
+    }
+}
+@media (max-width: 767px) {
+    .partform input[type="text"],
+    .partform input[type="email"],
+    .partform input[type="tel"],
+    .partform select {
+        width: calc(100% - 16px);
+    }
+    .botao button {
+        width: 100%;
+        margin: 5px 0;
+    }
+}

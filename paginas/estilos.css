@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+aside {
+    background-color: #f4f4f4;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    height: 200px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+}
+h3{
+    font-weight: 700;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+header {
+    display: flex; /*seu elementos sao posicionados e alinhados com base nas regras do Flexbox*/
+    align-items: center;
+    background-color:rgb(212, 166, 108);
+    color: black;
+    padding: 8px;
+    position: relative; /*é posicionado em relação à sua posição original no fluxo do documento*/
+}
+.logo {
+    width: 75px;
+    height: auto;
+    margin-right: 20px;
+}
+h1 {
+    font-family:'Times New Roman', Times, serif;
+    flex:1 /* indica que o elemento deve crescer e encolher conforme o espaço disponível dentro de um contêiner flexível*/
+}
+nav {
+    position: absolute;
+    right: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.navmenu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    font-family:'Times New Roman', Times, serif;
+}
+.navmenu li {
+    position: relative;
+}
+.navmenu a {
+    display: block;
+    color: black;
+    padding: 15px;
+    text-decoration: none;
+    font-weight: 700;
+}
+.navmenu a:hover {
+    background-color: #575757;
+}
+.droplista {
+    display: none; /*não seja exibido na página só quando o usuario passa o mouse*/
+    position: absolute; /*Permite posicionar o dropdown em relação ao elemento pai*/
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    min-width: 160px;
+}
+.droplista a {
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+.dropdlista a:hover {
+    background-color: #666;
+}
+.navmenu li:hover .droplista {
+    display: block;
+} 
+main {
+    padding: 20px;
+}
+footer {
+    background-color: rgb(212, 166, 108);
+    color: black;
+    padding: 10px;
+    text-align: center;
+}
+.imagens {
+    display: flex;
+    flex-wrap: wrap; /*os itens podem “quebrar” para a próxima linha, mantendo o layout mais organizado e responsivo.*/
+    gap: 20px;
+}
+.imagem {
+    flex:calc(50% - 20px); /* Duas imagens por linha Define a largura base do item como 50% da largura do contêiner */
+    box-sizing: border-box;
+}
+.imagem img {
+    width: 180px;
+    height: 180px;
+    display: block;
+}
+.imagem figcaption {
+    text-align: center;
+    margin: 10px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+
